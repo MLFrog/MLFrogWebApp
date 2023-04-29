@@ -1,7 +1,11 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/about">example</router-link> |
+    <router-link to="/main">Main</router-link> |
+    <router-link to="/next">LoginNext</router-link> |
+    <router-link to="/signup">Signup</router-link> |
+    <router-link to="/join">join</router-link>
   </nav>
   <router-view/>
 </template>
@@ -28,3 +32,14 @@ nav a.router-link-exact-active {
   color: #42b983;
 }
 </style>
+
+<script>
+import MainView from './views/MainView.vue'
+
+export default {
+  name: 'App',
+  components: {
+    MainView
+  }
+}
+</script>
