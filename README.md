@@ -1,4 +1,7 @@
-# soundappweb
+# Soundappweb
+
+실제 제품  
+vue version : 3.x
 
 ## Project setup
 ```
