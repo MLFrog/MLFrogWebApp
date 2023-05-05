@@ -14,17 +14,17 @@
                 </div>
                 <div class="row mb-5">
                   <div class="col-6 d-flex justify-content-start">
-                    <button class="btn btn-outline-primary btn-sm">회원가입</button>
+                    <button class="btn btn-outline-primary btn-sm" id="sm-btn">회원가입</button>
                   </div>
                   <div class="col-6 d-flex justify-content-end">
-                    <button class="btn btn-outline-primary btn-sm">로그인</button>
+                    <button class="btn btn-outline-primary btn-sm" id="sm-btn">로그인</button>
                   </div>
                 </div>
                 <div class="d-grid gap-2 mb-4">
-                <button type="submit" class="btn btn-primary" v-on:click.prevent="join">{{ joinButton }}</button>
+                <button type="submit" class="btn btn-primary btn-lg" id="bg-btn" v-on:click.prevent="join">{{ joinButton }}</button>
                 </div>
                 <div class="d-grid gap-2 d-md-block mx-auto">
-                  <button class="btn btn-outline-primary btn-sm" type="button">공지사항</button>
+                  <button class="btn btn-outline-primary btn-sm" id="sm-btn" type="button">공지사항</button>
                 </div>
               </form>
             </div>
@@ -58,6 +58,16 @@
   .card-header {
     background-color: #007bff;
     color: #fff;
+  }
+  #bg-btn:hover{
+      transform: translateY(-5px); 
+  }
+  .btn{
+            transition: .4s all;
+        }
+   
+  #sm-btn:hover{
+      transform: scale(1.2); 
   }
   </style>
   
