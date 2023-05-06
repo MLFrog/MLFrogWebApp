@@ -5,7 +5,9 @@
     <router-link to="/main">Main</router-link> |
     <router-link to="/next">LoginNext</router-link> |
     <router-link to="/signup">Signup</router-link> |
-    <router-link to="/join">join</router-link>
+    <router-link to="/join">Join</router-link> |
+    <router-link to="/room">Room</router-link> |
+    <router-link to="/admin">Admin</router-link>
   </nav>
   <router-view/>
 </template>
